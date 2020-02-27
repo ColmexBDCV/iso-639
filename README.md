@@ -40,6 +40,8 @@ ISO_639.find("en")
 ISO_639.find_by_english_name("Russian")
 # by French name
 ISO_639.find_by_french_name("français")
+# by Spanish name
+ISO_639.find_by_spanish_name("francés")
 ```
 
 The `ISO_639.search` class method searches across all fields and will
@@ -48,14 +50,14 @@ always returns an array of 0 or more results. For example:
 
 ```ruby
 ISO_639.search("spanish")
-# => [["spa", "", "es", "Spanish; Castilian", "espagnol; castillan"]]
+# => [["spa", "", "es", "Spanish; Castilian", "espagnol; castillan"; "español"]]
 ```
 
 Entries are arrays with convenience methods for accessing fields:
 
 ```ruby
 @entry = ISO_639.find("slo")
-# => ["slo", "slk", "sk", "Slovak", "slovaque"]
+# => ["slo", "slk", "sk", "Slovak", "slovaque", "eslovaco"]
 @entry.alpha3_bibliographic
 # => "slo"
 @entry.alpha3 # shortcut for #alpha3_bibliographic
@@ -68,6 +70,8 @@ Entries are arrays with convenience methods for accessing fields:
 # => "Slovak"
 @entry.french_name
 # => "slovaque"
+@entry.spanish_name
+# => "eslovaco"
 ```
 
 The full data set is available through the `ISO_639::ISO_639_1` and `ISO_639::ISO_639_2` constants.
