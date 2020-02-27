@@ -1,3 +1,9 @@
+#ISO_639 Con soporte en español
+
+Se han agregado los nombres en español al catalogo y un nuevo método llamado **find_by_spanish_name**, ambos permiten buscar empleando nombre del idioma en español.
+
+> nota: Únicamente se han integrado los idiomas mas comunes en español, aun hay mucho que agregar, si deseas colaborar por favor hazlo mediante un pull request
+
 # ISO 639
 
 A Ruby gem that provides the ISO 639-2 and ISO 639-1 data sets along with some convenience methods for accessing different entries and entry fields. The data comes from the [LOC ISO 639-2 UTF-8 data set](http://www.loc.gov/standards/iso639-2/ascii_8bits.html).
