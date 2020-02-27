@@ -1,4 +1,4 @@
-#ISO_639 Con soporte en español
+# ISO_639 Con soporte en español
 
 Se han agregado los nombres en español al catalogo y un nuevo método llamado **find_by_spanish_name**, ambos permiten buscar empleando nombre del idioma en español.
 
