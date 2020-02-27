@@ -2,6 +2,10 @@
 
 Se han agregado los nombres en español al catalogo y un nuevo método llamado **find_by_spanish_name**, ambos permiten buscar empleando nombre del idioma en español.
 
+### Para usar esta gema agrega la siguiente liena Gemfile:
+
+gem 'iso-639', git: 'https://github.com//ColmexBDCV/iso-639'
+
 > nota: Únicamente se han integrado los idiomas mas comunes en español, aun hay mucho que agregar, si deseas colaborar por favor hazlo mediante un pull request
 
 # ISO 639
